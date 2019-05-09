@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/static/css/styleZ1.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topcorner">
+    <button onclick="window.location.href = '{{ url_for('main.index') }}';" class="btnsmall"><i class="fa fa-home"></i></button>
+  </div>
+
+<form action="" method="post" novalidate>
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.username.label }}<br>
+      {{ form.username(size=32) }}<br>
+    </p>
+    <p>
+      {{ form.password.label }}<br>
+      {{ form.password(size=32) }}<br>
+    </p>
+    <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+    <p>{{ form.submit() }}</p>
+    {% if error %}
+    <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+  </form>
+  <p> New User? <a href="{{ url_for('main.register') }}">Click to Register!</a></p>
+</div>
+</div>
+</div>
+</form>
