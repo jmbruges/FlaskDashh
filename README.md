@@ -1,12 +1,10 @@
 # Super Dash plots with Flask
 
-Dash embedded flask, wigs entry point
+Dash embedded in flask, wigs entry point
 
 ## Getting Started
 
 How to run locally
-
-
 
 ### Installing
 
