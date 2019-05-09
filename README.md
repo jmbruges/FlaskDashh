@@ -13,8 +13,8 @@ How to run locally
 clone or download repo
 
 ```
-git clone https:
-cd dash_on_flask-master
+git clone https://github.com/pinkplot/FlaskDashh
+cd FlaskDashh
 ```
 
 setup the environment and variables
