@@ -1,17 +1,28 @@
-{% extends "base.html" %}
+<link rel="stylesheet" href="/static/css/styleZ1.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-{% block content %}
-    <h1>Register</h1>
-    <form action="" method="post">
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.username.label }}<br>
-            {{ form.username(size=32) }}<br>
-        </p>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=32) }}<br>
-        </p>
-        <p>{{ form.submit() }}</p>
-    </form>
-{% endblock %}
+<div class="topcorner">
+    <button onclick="window.location.href = '{{ url_for('main.index') }}';" class="btnsmall"><i class="fa fa-home"></i></button>
+  </div>
+
+<form action="" method="post" novalidate>
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.username.label }}<br>
+      {{ form.username(size=32) }}<br>
+    </p>
+    <p>
+      {{ form.password.label }}<br>
+      {{ form.password(size=32) }}<br>
+    </p>
+    <p>{{ form.submit() }}</p>
+  </form>
+</div>
+</div>
+</div>
+</form>
+
